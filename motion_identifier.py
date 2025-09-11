@@ -90,12 +90,6 @@ def motion_type(v_si, a_si):
         motion = "Decelerated Motion"
     elif v_si == 0:
         motion = "At Rest"
-    elif v_si < 0 and a_si == 0:
-        motion = "Uniform Motion"
-    elif v_si < 0 and a_si > 0:
-        motion = "Decelerated Motion"
-    elif v_si < 0 and a_si < 0:
-        motion = "Accelerated Motion"
     else:
         print ("Error: Unknown Result")
         quit()
@@ -147,3 +141,4 @@ print(f"Acceleration = {a_si:.3f} m/s²")
 
 
 print(f"Motion Type = {motion}")
+
